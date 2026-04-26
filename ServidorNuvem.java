@@ -15,4 +15,41 @@ public class ServidorNuvem {
     public ServidorNuvem(String ip, String tipoInstancia) {
         this(ip, tipoInstancia, 0.0, 0);
     }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
+
+    public String getTipoInstancia() {
+        return tipoInstancia;
+    }
+
+    public void setTipoInstancia(String tipoInstancia) {
+        this.tipoInstancia = tipoInstancia;
+    }
+
+    public double getCustoPorHora() {
+        return custoPorHora;
+    }
+
+    public void setCustoPorHora(double custoPorHora) {
+        this.custoPorHora = custoPorHora;
+    }
+
+    public int getHorasLigado() {
+        return horasLigado;
+    }
+
+    public void setHorasLigado(int horasLigado) {
+        this.horasLigado = horasLigado;
+    }
+    public double calcularCustoTotal(){
+        return custoPorHora*horasLigado;
+    }
+
+
 }
