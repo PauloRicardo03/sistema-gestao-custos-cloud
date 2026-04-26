@@ -1,5 +1,7 @@
 package GestãodeCustosCloud;
 
+
+
 public class FaturaDevOps {
 private String mesReferencia;
 private double valorTotalFatura;
@@ -28,7 +30,12 @@ private double valorTotalFatura;
         this.valorTotalFatura = valorTotalFatura;
     }
     public void adicionarCustoServidor(ServidorNuvem servidor){
-     this.valorTotalFatura+=servidor.calcularCustoTotal();
+
+      double custo= servidor.calcularCustoTotal();
+      if (servidor.getHorasLigado()>500){
+          custo*=0.9;
+      }
+      valorTotalFatura+=custo;
     }
 
 }

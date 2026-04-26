@@ -1,5 +1,7 @@
 package GestãodeCustosCloud;
 
+
+
 public class ServidorNuvem {
     private String ip;
     private String tipoInstancia;
