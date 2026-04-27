@@ -47,8 +47,9 @@ public void adicionarCustoServidor(ServidorNuvem servidor) {
    git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
    ```
 2. Abra o projeto em sua IDE de preferência (IntelliJ IDEA, Eclipse, VS Code).
-3. Navegue até o pacote `GestãodeCustosCloud` e execute a classe principal `SistemaFinOps.java`.
-4. O console exibirá o processamento das instâncias e o valor total da fatura formatado.
+3. Nota sobre a estrutura: As classes foram desenvolvidas sob o pacote GestãodeCustosCloud. Para compilar localmente via IDE, certifique-se de alocar os arquivos em um diretório com esse exato nome (ex: src/GestãodeCustosCloud/).
+4.Execute a classe principal SistemaFinOps.java.
+5.O console exibirá o processamento das instâncias e o valor total da fatura consolidada.
 
 ---
 *Desenvolvido com foco em Engenharia de Software, Arquitetura Limpa e Inteligência Financeira aplicada à TI.*
