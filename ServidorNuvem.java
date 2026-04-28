@@ -3,27 +3,27 @@ package GestãodeCustosCloud;
 
 
 public class ServidorNuvem {
-    private String ip;
+    private String id;
     private String tipoInstancia;
     private double custoPorHora;
     private int horasLigado;
 
-    public ServidorNuvem(String ip, String tipoInstancia, double custoPorHora, int horasLigado) {
-        this.ip = ip;
+    public ServidorNuvem(String id, String tipoInstancia, double custoPorHora, int horasLigado) {
+        this.id = id;
         this.tipoInstancia = tipoInstancia;
         this.custoPorHora = custoPorHora>=0?custoPorHora:0;
         this.horasLigado = horasLigado>=0?horasLigado:0;
     }
-    public ServidorNuvem(String ip, String tipoInstancia) {
-        this(ip, tipoInstancia, 0.0, 0);
+    public ServidorNuvem(String id, String tipoInstancia) {
+        this(id, tipoInstancia, 0.0, 0);
     }
 
-    public String getIp() {
-        return ip;
+    public String getId() {
+        return id;
     }
 
-    public void setIp(String ip) {
-        this.ip = ip;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getTipoInstancia() {
